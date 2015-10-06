@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\VANLib\VANLib\bin\Debug\ZMQLib.dll
+C:\Users\Administrator\Desktop\VANLib\VANLib\bin\Debug\ZMQLib.pdb
+C:\Users\Administrator\Desktop\VANLib\VANLib\bin\Debug\clrzmq.dll
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Debug\VANLib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Debug\ZMQLib.dll
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Debug\ZMQLib.pdb

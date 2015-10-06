@@ -1,0 +1,178 @@
+<!--
+  Copyright 2015 Brendan Murray
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- Define the edit dialog.                       -->
+<script type="text/x-red" data-template-name="VAN-EXPORT">
+
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+    <br/>
+
+	<div class="form-row">
+        <label for="node-input-token"><i class="fa fa-list"></i> Token</label>
+        <input type="text" id="node-input-token">
+    </div>
+    <br/>
+	
+    <!-- Node name -->
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+
+<!-- Next, some simple help text is provided for the node.                   -->
+<script type="text/x-red" data-help-name="VAN-EXPORT">
+	<p>ZMQ Node to synchronization the status of a application, process or service</p>
+	<p><b>This is how the Node will work:</b>
+	<br>The Node starts up and waits for all subscribers to connect.
+	<br>When the Node has all subscribers connected, it starts to publish data and wait client send request.
+	<br>When the Node receive client request, it will outputs a <b>msg</b> containing <b>msg.payload</b> which from client request.
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('VAN-EXPORT', {
+        category: 'ADVANTECH', // the palette category
+        defaults: {               // defines the editable properties of the node
+            name:    {value: ""},
+            topic:   {value: "VAN Export"},
+			token:	 {value: ""}
+        },
+        inputs:  1,              // set the number of inputs - only 0 or 1
+        outputs: 0,              // set the number of outputs - 0 to n
+        color:   "#E7E7AE",
+        icon:    "white-globe.png",   // saved in  icons/myicon.png
+        paletteLabel: "Export",
+        label:   function() {    // sets the default label contents
+                   return this.name||this.topic||"VAN Export";
+                 },
+        labelStyle: function() { // sets the class to apply to the label
+                   return this.name ? "node_label_italic": "";
+                 }
+    });
+</script>
+
+<!-- Define the edit dialog.                       -->
+<script type="text/x-red" data-template-name="VAN-IMPORT">
+
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+    <br/>
+	
+	<div class="form-row">
+        <label for="node-input-token"><i class="fa fa-list"></i> Token</label>
+        <input type="text" id="node-input-token">
+    </div>
+    <br/>
+	
+    <!-- Node name -->
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+
+<!-- Next, some simple help text is provided for the node.                   -->
+<script type="text/x-red" data-help-name="VAN-IMPORT">
+	<p>ZMQ Node to synchronization the status of a application, process or service</p>
+	<p><b>This is how the Node will work:</b>
+	<br>The Node starts up and waits for all subscribers to connect.
+	<br>When the Node has all subscribers connected, it starts to publish data and wait client send request.
+	<br>When the Node receive client request, it will outputs a <b>msg</b> containing <b>msg.payload</b> which from client request.
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('VAN-IMPORT', {
+        category: 'ADVANTECH', // the palette category
+        defaults: {               // defines the editable properties of the node
+            name:    {value: ""},
+            topic:   {value: "VAN Import"},
+			token:	 {value: ""}
+        },
+        inputs:  0,              // set the number of inputs - only 0 or 1
+        outputs: 1,              // set the number of outputs - 0 to n
+        color:   "#E7E7AE",
+        icon:    "white-globe.png",   // saved in  icons/myicon.png
+		align: "right",
+        paletteLabel: "Import",
+        label:   function() {    // sets the default label contents
+                   return this.name||this.topic||"VAN Import";
+                 },
+        labelStyle: function() { // sets the class to apply to the label
+                   return this.name ? "node_label_italic": "";
+                 }
+    });
+</script>
+
+<!-- Define the edit dialog.                       -->
+<script type="text/x-red" data-template-name="VAN-DELEGATE">
+
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+    <br/>
+	 
+	<div class="form-row">
+        <label for="node-input-token"><i class="fa fa-list"></i> Token</label>
+        <input type="text" id="node-input-token">
+    </div>
+    <br/>
+	
+    <br/>
+    <!-- Node name -->
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+
+<!-- Next, some simple help text is provided for the node.                   -->
+<script type="text/x-red" data-help-name="VAN-DELEGATE">
+	<p>VAN Node to synchronization the status of a application, process or service</p>
+	<p><b>This is how the Node will work:</b>
+	<br>The Node starts up and waits for all subscribers to connect.
+	<br>When the Node has all subscribers connected, it starts to publish data and wait client send request.
+	<br>When the Node receive client request, it will outputs a <b>msg</b> containing <b>msg.payload</b> which from client request.
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('VAN-DELEGATE', {
+        category: 'ADVANTECH', // the palette category
+        defaults: {               // defines the editable properties of the node
+            name:    {value: ""},
+            topic:   {value: "VAN Delegate"},
+			token:	 {value: ""}
+        },
+        inputs:  1,              // set the number of inputs - only 0 or 1
+        outputs: 1,              // set the number of outputs - 0 to n
+        color:   "#E7E7AE",
+        icon:    "white-globe.png",   // saved in  icons/myicon.png
+        paletteLabel: "Delegate",
+        label:   function() {    // sets the default label contents
+                   return this.name||this.topic||"VAN Delegate";
+                 },
+        labelStyle: function() { // sets the class to apply to the label
+                   return this.name ? "node_label_italic": "";
+                 }
+    });
+</script>

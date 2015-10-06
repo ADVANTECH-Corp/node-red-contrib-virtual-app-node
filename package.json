@@ -1,0 +1,31 @@
+{
+  "author": {
+    "name": "Neo Lo",
+    "email": "neo.lo@advantech.com.tw",
+    "url": "https://www.npmjs.com/~neo.lo"
+  },
+  "name": "node-red-contrib-virual-app-node",
+  "version": "0.0.1",
+  "description": "Node-red node for virual app node",
+  "dependencies": {
+	"zmq": "2.13.x"
+  },
+  "repository": {
+    "url": "git+https://github.com/ADVANTECH-Corp/node-red-contrib-virual-app-node"
+  },
+  "keywords": [
+    "ADVANTECH",
+    "zmq",
+	"node-red"
+  ],
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/ADVANTECH-Corp/node-red-contrib-virual-app-node/issues"
+  },
+  "homepage": "https://github.com/ADVANTECH-Corp/node-red-contrib-virual-app-node",
+  "node-red": {
+    "nodes": {
+	  "VAN": "VAN-node/VAN.js"
+    }
+  }
+}

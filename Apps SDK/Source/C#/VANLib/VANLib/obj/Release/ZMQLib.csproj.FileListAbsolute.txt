@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\ZMQLib.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\ZMQLib.pdb
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\ZMQLib.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\ZMQLib.pdb
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\clrzmq.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\ZMQLib.csprojResolveAssemblyReference.cache

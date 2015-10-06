@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\ZMQLib.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\ZMQLib.pdb
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\bin\Release\clrzmq.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\VANLib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\ZMQLib.dll
+C:\Users\Administrator\Desktop\ZMQLib\ZMQLib\obj\Release\ZMQLib.pdb
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Release\VANLib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VANLib\VANLib\bin\Release\VANLib.dll
+C:\Users\Administrator\Desktop\VANLib\VANLib\bin\Release\VANLib.pdb
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Release\VANLib.dll
+C:\Users\Administrator\Desktop\VANLib\VANLib\obj\Release\VANLib.pdb
