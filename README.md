@@ -1,14 +1,14 @@
-# node-red-contrib-virual-app-node
+# node-red-contrib-virtual-app-node
 A collection of [Node-RED](http://nodered.org) nodes to communicate Node-Red node and apps.
 
 ## Install
 Use npm to command to install this package locally in the Node-RED modules directory
 ```bash
-npm install node-red-contrib-virual-app-node 
+npm install node-red-contrib-virtual-app-node 
 ```
 or install in it globally with the command
 ```bash
-npm install node-red-contrib-virual-app-node -g 
+npm install node-red-contrib-virtual-app-node -g 
 ```
 
 ## Nodes included in the package
@@ -19,7 +19,7 @@ npm install node-red-contrib-virual-app-node -g
 **Delegate** Export data to apps and import data to node.
 
 ## Usage example
-![Flow](./node-red-contrib-virual-app-node_example.PNG)
+![Flow](./node-red-contrib-virtual-app-node_example.PNG)
 
 Simple usage of the plugin in Node-RED, a message with ON or 1 will turn on the node, otherwise a message with OFF or 0 will turn off the node.
 ```json
